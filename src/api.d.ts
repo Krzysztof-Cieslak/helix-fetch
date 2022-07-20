@@ -210,6 +210,8 @@ export interface ContextOptions {
 
   h1?: Http1Options;
   h2?: Http2Options;
+
+  socketFactory?: (requestOptions: any) => any;
 }
 
 export class AbortSignal {
